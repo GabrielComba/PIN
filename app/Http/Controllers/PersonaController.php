@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use App\Mail\SendPost;
 use App\models\Persona;
 use Illuminate\Http\Request;
-use\illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Mail;
+
 
 class PersonaController extends Controller
 {
