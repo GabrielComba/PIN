@@ -12,7 +12,7 @@ class SendPost extends Mailable
 {
     use Queueable, SerializesModels;
 
-    //creo Variaple PUBLIC para poder mandar los datos que quiero que se registren de la persona
+    //creo Variable PUBLIC $details para poder mandar los datos que quiero que se registren de la persona
     public $details;
 
     /**

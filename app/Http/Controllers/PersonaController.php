@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\SendPost;
 use App\models\Persona;
 use Illuminate\Http\Request;
+use\illuminate\Support\Facades\Mail;
 
 class PersonaController extends Controller
 {
@@ -46,9 +48,10 @@ class PersonaController extends Controller
             'email' => $request['email'],
         ]);
 
-        //CREAMOS CONTROLADOR PARA ENVIAR MAIL (que quiero que envie la Variable que cree $details en SendPost.php)
+        //CREAMOS LA VARIABLE PARA ENVIAR MAIL (que quiero que envie la Variable que cree $details en SendPost.php)
+
         $details = [
-            'mensaje' => 'El Usuario se a registrado',
+            'mensaje' => "El Usuario " . $request['name'] . "se a registrado",
             'name' => $request['name'],
             'apellido' => $request['apellido'],
             'email' => $request['email'],
