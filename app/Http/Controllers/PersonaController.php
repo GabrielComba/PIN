@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\models\Persona;
 use Illuminate\Http\Request;
 
 class PersonaController extends Controller

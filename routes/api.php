@@ -19,4 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 //CREAMOS RUTA PARA TIPO POST QUE APUNTE AL METODO STORE DE (API.PHP)
 //PARA CARGAR DATOS
-route::post('agregar-persona', [PersonaController::class, 'store']);
+
+Route::post('agregar-persona', [PersonaController::class, 'store']);
